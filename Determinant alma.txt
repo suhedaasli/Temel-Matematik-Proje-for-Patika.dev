@@ -1,0 +1,64 @@
+Determinatlar
+
+1×1 Matrislerin determinantı
+A matrisi en basit 1 × 1 tipinde bir matris olsun. Tek bileşeni sayı olan bu tip
+matrislerin determinantı, bileşen sayısıdır.
+
+2×2 Matrislerinin determinantı
+A matrisi 2×2 tipinden bir matris olsun:
+A =(a b
+    c d)
+gibi 2×2 tipinden olan bir matrisin deteminantı
+|A| = ab −cd
+olarak tanımlanır.
+
+3×3 Matrislerinin determinantı
+A matrisi 3×3 tipinden bir matris olsun:
+A =(a11 a12 a13
+    a21 a22 a23
+    a31 a32 a33)
+det(A) = |A|= a11a22a33 + a12a23a31 + a13a21a32−(a31a22a13 + a32a23a11 + a33a21a12)
+olarak tanımlanır. Ancak bu tanım öncekilere göre biraz daha karmaşıktır. Bu
+karmaşıklığı yok etmek için daha basit bir yollar izlenebilir. izlenebilecek yollardan birisi,
+3×3 tipinden matrislerin determinantını bulmaya yarayan Sarrus yöntemidir. Oldukça 
+pratik olan bu yöntemi öğrenmek kolaydır.
+
+Yüksek Boyutlu Matrislerin Determinantlarının Hesaplanması
+Yukarıda söylenen metotlar 2 ve 3 boyutlu matrisler içindir. Matrisin boyutu artınca o yöntemler 
+işe yaramaz. Hangi boyutta olursa olsun, bir matrisin determinantını hesaplanak için Laplace yöntemi 
+geçerli genel bir yöntemdir.İşlemleri kısaltmak için Gauss yok etme metodu da oldukça pratik genel bir yöntemdir. 
+Bu yöntemleri a¸sa˘gıdaki örneklerle inceleyeceğiz.
+
+Laplace Yöntemi
+
+Minör
+
+n ×n tipinden
+A =(a11 a12 a13,...,a1n
+    a21 a22 a23,...,a2n
+     .
+     .
+     .
+    an1 an2 an3,...,ann)
+
+matrisinin herhangi bir aij bileşeninin minörü ¸söyle tanımlanır:
+i-inci satır ile j-inci kolon atılır. Geri kalan matrisin determinantı aij bileşenine
+karşılık gelen minör’dür. Buna göre, yukardaki A matrisinin ai j bile¸senine karşılık gelen minör
+
+(a11 a12 a13 ··· _ ··· a1n
+ a21 a22 a23 ··· _ ··· a2n
+             ···
+  _   _   _  ··· _ ···  _
+             ···
+ an1 an2 an3 ··· _ ··· ann)
+
+biçimindeki matrisin determinantıdır. Onu
+
+min(ai j) = Mi j =(a11 a12 a13 ··· _ ··· a1n
+                   a21 a22 a23 ··· _ ··· a2n
+                               ···
+                    _   _   _  ··· _ ···  _
+                               ···
+                   an1 an2 an3 ··· _ ··· ann)
+
+biçiminde gösterelim. Tabii, minörü yazarken, yukarıda bileşenleri _ ile gösterilen i-inci satır ile j-inci kolonun silineceğini unutmayacağız.
